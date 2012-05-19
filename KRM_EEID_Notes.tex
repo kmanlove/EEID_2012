@@ -1,0 +1,38 @@
+\documentclass{article}
+
+\begin{document}
+\section*{Instructors}
+  \begin{itemize}
+    \item Micaela -- time-series/data linked to models
+    \item Christian -- giant datasets (plier? reshape stuff?)
+  \end{itemize}
+  
+\section*{Matt's basic R vocabulary}
+How does R see things that live in the R environment? R sees:
+\begin{itemize}
+  \item character -- sometimes numbers can be seen as characters.  Is there some better way to deal with this than "as.numeric(as.character())"?
+  \item integers
+  \item numeric
+  \item logical
+  \item complex
+  \item factors
+  \item ordered factors
+\end{itemize}
+
+Objects 
+\begin{itemize}
+  \item R has a complex vector type, in which everything is written in complex form. 
+  \item List: Matt says, ``basket'' of objects, in which each object retains its class
+  \item Dataframes -- ``allow you to subset the memory space within R''.  He means, dataframes can be subset?  He means, partition name space. Allows you to have two variables with the same name, so long as they occupy two separate dataframes. 
+\end{itemize}
+
+Indexing
+\begin{itemize}
+  \item Is there a way to call a:z elements of a list? (like [[a:z]])?
+  \item Trick to get R to work around A: nxn now A[1,] is a vector but you want to treat it as a matrix.  Use A[1,drop=F], which returns a 1xn matrix. 
+\end{itemize}
+
+\section*{Ben: Philosophies on saving}
+Ben's is to save the script and start from a clean environment.  Save particular objects explicitly, then load when wanted.  He never saves the workspace.  Save vs. dput, save.history prints commands; lets you edit file so that you've got a transcript of what happened.
+
+\end{document}
